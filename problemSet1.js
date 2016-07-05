@@ -9,3 +9,10 @@ function letterCapitalize(string) {
 }
 
 letterCapitalize("dog cat monkey");
+
+function wordCount(string) {
+  var words = string.split(' ');
+  console.log(words.length);
+}
+
+wordCount('Never eat shredded wheat');
