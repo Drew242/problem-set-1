@@ -16,3 +16,26 @@ function wordCount(string) {
 }
 
 wordCount('Never eat shredded wheat');
+
+function isPrime(n) {
+  var prime = []
+  for (i = 2; i < n; i++) {
+    if (n % i === 0) {
+      prime.push('no');
+    }
+    else {
+      prime.push('yes');
+    }
+  }
+  if (prime[0] == 'yes') {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
+
+isPrime(7);
+isPrime(256);
+isPrime(83);
+isPrime(127);
+isPrime(132);
